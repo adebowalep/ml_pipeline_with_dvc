@@ -30,3 +30,13 @@ stages:
     - train.seed
     outs:
     - model.pkl
+  evaluate:
+    cmd: python src/evaluate.py model.pkl data/features
+    deps:
+    - model.pkl
+    - data/features
+    - src/evaluate.py
+    params:
+    - evaluate.threshold
+    outs:
+    - metrics.txt
