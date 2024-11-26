@@ -86,3 +86,8 @@ stages:
       hash: md5
       md5: 2db04cc9d5e1c64adb9e1e0780ec022b
       size: 195
+    - path: eval/plots
+      hash: md5
+      md5: 7c7d829cdac595ecca4b16a481082d08.dir
+      size: 1344403
+      nfiles: 7
